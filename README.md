@@ -126,19 +126,7 @@ Your code should handle memory management and sending arguments to threads funct
   * Create A, B, and C in the dynamic heap, then create a struct that has A*, B*, C* (pointers to the arrays), the row number, and the column number , then send the struct to the thread function by reference (allocate the struct in the dynamic heap).
 * In all cases, you have to free any allocated memory in the dynamic heap at the end of the worker (child) thread, no memory leak should be allowed.
 
-## 6. Deliverables
-
-* Complete source code in C, commented thoroughly and clearly.
-* A make file that we can use to compile/build your code. Note that you need to call the executable matMultp.
-* A report that describes the following:
-    1. How your code is organized.
-    2. Your code main functions.
-    3. How to compile and run your code.
-    4. Sample runs.
-    5. A comparison between the three methods of matrix multiplication.
-* A 2-min (tolerance of 30 seconds only) video that shows the output of those test cases ([test1](test1/), [test2](test2/) & [test3](test3/)).
-
-## 7. Hints
+## 6. Hints
 
 To measure the execution time, you will need to use code that is similar to this:
 
@@ -158,7 +146,7 @@ main()
 }
 ```
 
-## 8. Frequently Asked Questions
+## 7. Frequently Asked Questions
 
 1. Why the first method (a thread per matrix) is performing better than the second (a thread per row) and the third (a thread per element)?
 
